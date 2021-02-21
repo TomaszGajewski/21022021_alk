@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const functions = require("./functions");
-const port = 3000;
+const port = process.env.port || 3000;
 const app = express();
 
 const sample = () =>'jakiś podtytuł'
